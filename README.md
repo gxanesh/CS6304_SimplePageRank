@@ -1,16 +1,15 @@
 # SimplePageRank
-# -presented by Arindam Khanda
 
 ### Importing Project:
 * Open “eclipse”, right click on “Package Explorer” window, click import.
 * Select “Git”-> “Projects from Git” and click “next”.
 * Select “clone url” and click “next”.
-* Paste “https://github.com/shudipdatta/SimplePageRank.git” in the “url” textbox, Change protocol to “git”, and click “next”. 
+* Paste “https://github.com/ArindamK92/CS6304_SimplePageRank” in the “url” textbox, and click “next”. 
 * Choose “Import existing project” and click “finish”.
 
 ### Referencing libraries:
 * Right click on project and select “build path”-> “configure build path” ->”libraries”->”add external jars”.
-* Go to "cloudera" -> "git" -> "SimplePageRank" -> "lib" and select all jars and click ok.
+* Go to "home" -> "git" -> "SimplePageRank" -> "lib" and select all jars and click ok.
 
 ### Input file:
 * Open folder "file", you will see the input file named "PageRank.txt"
@@ -18,7 +17,7 @@
 ### Output jar:
 * Right click on project and select "Export".
 * Choose type "Java" -> "Jar file" and click "next".
-* Select the export destination as "cloudera" -> "git" -> "SimplePageRank" -> "jar" and click "Finish".
+* Select the export destination as "home" -> "git" -> "SimplePageRank" -> "jar" and click "Finish".
 
 ### Hadoop Commands:
 * hadoop fs -mkdir InputFolder                                      //to create a new input folder
@@ -30,12 +29,13 @@
 * hadoop fs -rm -r OutputFolder                                     //to remove "OutputFolder" directory and all its files
   
   
-### General Information (Cloudera):
+### General Information:
 
 * Operating System:         Mac -> Microsoft Remote Desktop, Windows -> Default Remote Desktop, Ubuntu -> Remmina
-* Machine:                  cqs-cs6304-xxx.ats.mst.edu
-* User:                     cloudera
-* Default Password:         stu-pass
-* Change Password Command:  sudo passwd cloudera
+* Machine:                  cs6304-<mst_username>-01.class.mst.edu
+* User:                     <mst_username>
+* Default Password:         <mst_password>
 
-* "Firefox already running" error solve by command:     killall -SIGTERM firefox
+###Common error fix:
+Error: shell-init: error retrieving current directory: getcwd
+- the directory at which you are when you try to run hadoop command does not exist anymore.
