@@ -34,6 +34,10 @@
 * hadoop fs -ls OutputFolder                                        //to see the files inside "OutputFolder"
 * hadoop fs -cat OutputFolder/part-r-00000                          //to see the content inside "OutputFolder/part-r-00000" file
 * hadoop fs -rm -r OutputFolder                                     //to remove "OutputFolder" directory and all its files
+* hadoop fs -rm -r InputFolder					    //to remove "OutputFolder" directory and all its files
+
+- remove OutputFolder before generating the next results.
+- remove/clean InputFolder if you want to use a different file as input.
   
 ### Common error fix:
 
