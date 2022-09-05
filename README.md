@@ -1,5 +1,12 @@
 # SimplePageRank
 
+### General Information:
+
+* Operating System:         Mac -> Microsoft Remote Desktop, Windows -> Default Remote Desktop, Ubuntu -> Remmina
+* Machine:                  cs6304-<mst_username>-01.class.mst.edu
+* User:                     <mst_username>
+* Default Password:         <mst_password>
+
 ### Importing Project:
 * Open “eclipse”, right click on “Package Explorer” window, click import.
 * Select “Git”-> “Projects from Git” and click “next”.
@@ -28,14 +35,6 @@
 * hadoop fs -cat OutputFolder/part-r-00000                          //to see the content inside "OutputFolder/part-r-00000" file
 * hadoop fs -rm -r OutputFolder                                     //to remove "OutputFolder" directory and all its files
   
-  
-### General Information:
-
-* Operating System:         Mac -> Microsoft Remote Desktop, Windows -> Default Remote Desktop, Ubuntu -> Remmina
-* Machine:                  cs6304-<mst_username>-01.class.mst.edu
-* User:                     <mst_username>
-* Default Password:         <mst_password>
-
 ###Common error fix:
 Error: shell-init: error retrieving current directory: getcwd
 - the directory at which you are when you try to run hadoop command does not exist anymore.
