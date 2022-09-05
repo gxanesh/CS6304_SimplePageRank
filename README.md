@@ -35,6 +35,7 @@
 * hadoop fs -cat OutputFolder/part-r-00000                          //to see the content inside "OutputFolder/part-r-00000" file
 * hadoop fs -rm -r OutputFolder                                     //to remove "OutputFolder" directory and all its files
   
-###Common error fix:
-Error: shell-init: error retrieving current directory: getcwd
+### Common error fix:
+
+Error: "shell-init: error retrieving current directory: getcwd"
 - the directory at which you are when you try to run hadoop command does not exist anymore.
