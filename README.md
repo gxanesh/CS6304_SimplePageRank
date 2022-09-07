@@ -29,7 +29,7 @@
 ### Hadoop Commands:
 ```
 hadoop fs -mkdir InputFolder                                      //to create a new input folder
-hadoop fs -copyFromLocal &lt;input file> InputFolder                  //to copy a file from local directory to hadoop environment
+hadoop fs -copyFromLocal <input file> InputFolder                  //to copy a file from local directory to hadoop environment
 hadoop fs -ls InputFolder                                          //to see the files inside "InputFolder"
 hadoop jar <jar file name> <class name> InputFolder OutputFolder   //running mapreduce operation
 hadoop fs -ls OutputFolder                                        //to see the files inside "OutputFolder"
