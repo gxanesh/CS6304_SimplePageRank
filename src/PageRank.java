@@ -23,12 +23,12 @@ public class PageRank {
 			String[] nodes = value.toString().split("->");
 			String nodeId = nodes[0];
 			double initRank = 1.0;
-			context.write(new Text(nodeId), new DoubleWritable(initRank));
+			context.write(new Text(nodeId), new DoubleWritable(initRank)); //(a,1)
 			
 			String[] outLinks = nodes[1].split(",");								
 			double ratio = initRank / outLinks.length;			
 			for (int i = 0; i < outLinks.length; i++) {
-				context.write(new Text(outLinks[i]), new DoubleWritable(ratio));
+				context.write(new Text(outLinks[i]), new DoubleWritable(ratio)); //(b,1/4) (c,1/4) (d,1/4) (e, 1/4)
 			}
 		}
 	}
