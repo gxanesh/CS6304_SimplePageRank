@@ -38,7 +38,7 @@ hadoop fs -rm -r InputFolder					    //to remove "InputFolder" directory and all
 ```
 Use below commands to run your code.  
 ```
-hadoop fs -mkdir InputFolder                                      //to create a new input folder
+hadoop fs -mkdir -p InputFolder                                      //to create a new input folder
 hadoop fs -copyFromLocal <input file> InputFolder                  //to copy a file from local directory to hadoop environment
 hadoop fs -ls InputFolder                                          //to see the files inside "InputFolder"
 hadoop jar <jar file name> <class name> InputFolder OutputFolder   //running mapreduce operation
