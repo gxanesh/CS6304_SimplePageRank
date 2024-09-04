@@ -50,8 +50,8 @@ hadoop fs -cat OutputFolder/part-r-00000                          //to see the c
 - remove/clean InputFolder if you want to use a different file as input.
   
 ### Common error fix:
-Error 1: mkdir: Call From cs6304-akkcm-02/127.0.1.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused  
-Explanation and Fix: Generally, this error comes if you are running hadoop first time on your VM after a reset. The below commands will fix it.
+Error 1: mkdir: Call From cs6304-gs37r-01/127.0.1.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused  
+Explanation and Fix: Generally, this error comes if you are running Hadoop first time on your VM after a reset. The below commands will fix it.
 ```
 stop-all.sh
 hadoop namenode -format
